@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    border-radius: 5px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to right,rgb(144, 245, 144),rgb(55, 159, 245));
+}
+
+.container{
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 3px;
+    /* position: relative; */
+    justify-content: center;
+    /* align-content: center; */
+    min-height: 90vh;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: repeat(6,minmax(80px,auto));
+    row-gap: 0px;
+    margin-bottom: 20px;
+    grid-row-gap: 3px;
+
+} 
+
+.spn2{
+    grid-column: span 2;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.8rem;
+    border: 1px solid black;
+    background-color: rgb(199, 250, 233);
+    
+}
+button:hover{
+    background-color: azure;
+}
+
+.output{
+    grid-column: 1 /-1;
+    background-color: black ;
+    opacity: 60%;
+    color: hsl(34, 78%, 91%);
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 1.8rem;
+    text-align: right;
+    justify-content:space-between;
+    padding-right: 5px;
+    /* backface-visibility: 75%; */
+}
+
+#sgrid{
+    display: block;
+    font-size: 1rem;
+    color: hsl(30, 50%, 96%);
+
+}
+
+#fgrid{
+    margin-top: 5px;
+}
+
